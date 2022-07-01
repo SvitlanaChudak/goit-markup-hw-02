@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
@@ -14,7 +16,7 @@
       <a class="logo" href="./index.html"><span class="color">Web</span>Studio</a>
       <nav class="header-nav">
         <ul class="list header-list">
-          <li class="header-item"><a class="link header-link" href="./index.html">Студия</a></li>
+          <li class="header-item"><a class="link header-link active" href="./index.html">Студия</a></li>
           <li class="header-item"><a class="link header-link" href="./portfolio.html">Портфолио</a></li>
           <li class="header-item"><a class="link header-link" href="#">Контакты</a></li>
         </ul>
@@ -30,16 +32,16 @@
     </header>
 
     <!-- Main section -->
-    <main class="main">
+    <main>
       <!-- Студия -->
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="btn" type="button">Заказать услугу</button>
+        <button class="button" type="button">Заказать услугу</button>
       </section>
 
       <!-- Преимущества -->
       <section class="benefits">
-        <h2 hidden>Преимущества</h2>
+        <h2 class="visually hidden">Преимущества</h2>
         <ul class="list benefits-list">
           <li class="benefits-item">
             <h3 class="benefits-title">Внимание к деталям</h3>
@@ -157,10 +159,10 @@
             >
           </li>
           <li class="contacts-item">
-            <a class="link contacts-link" href="mailto:info@example.com">info@example.com</a>
+            <a class="link contacts-link mail" href="mailto:info@example.com">info@example.com</a>
           </li>
           <li class="contacts-item">
-            <a class="link contacts-link" href="tel:+380991111111">+38 099 111 11 11</a>
+            <a class="link contacts-link phone" href="tel:+380991111111">+38 099 111 11 11</a>
           </li>
         </ul>
       </address>

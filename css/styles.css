@@ -1,112 +1,137 @@
-
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
-    --brand-color: #2196F3;
-    --primary-white-color: #FFFFFF;
-    --accent-color: #2F303A;
-    --additional-accent-color: #F5F4FA;
-}
-body {
-    color: var(--primary-text-color);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --brand-color-blue: #2196F3;
+    --brand-color-black: #000000;
+    --footer-contacts-color: rgba(255, 255, 255, 0.6);
+    --white-color: #FFFFFF;
+    --dark-background-color: #2F303A;
+    --light-background-color: #F5F4FA;
+    --frame-color: #ECECEC;
+    --main-font: Roboto, sans-serif;
+    --secondary-font: Raleway, sans-serif;
 }
 
-/* Colors */
-.benefits-title,
-.section-title,
-.title-portfolio,
-.team-title {
-    color: var(--title-text-color);
+body {
+    color: var(--primary-text-color);
+    background-color: var(--white-color);
+    font-family: var(--main-font);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
-.hero-title {
-    color: var(--primary-white-color);
-}
-.hero {
-    background-color: var(--accent-color);
-}
-.btn {
-    color: var(--primary-white-color);
-    background-color: var(--brand-color);
-}
+
 .list {
     list-style: none;
 }
 
 .link,
-.logo {
+.logo,
+.portfolio-link {
     text-decoration: none;
 }
-.logo,
-.header-nav [href] {
+
+
+/* Colors */
+
+.benefits-title, .section-title, .title-portfolio, .team-title {
     color: var(--title-text-color);
 }
-
-[href*="mailto"],
-[href*="tel"] {
-    color: var(--primary-text-color);
+.hero-title {
+    color: var(--white-color);
 }
-.contacts-link>[href*="mailto"],
-.contacts-link>[href*="tel"] {
-color:rgba(255, 255, 255, 0.6);
-}
-
-.logo>.color {
-    color: var(--brand-color);
-}
-.footer {
-    background-color: var(--accent-color);
-}
-.footer>.logo,
-.footer .map {
-    color: var(--primary-white-color);
+.hero {
+    background-color: var(--dark-background-color);
 }
 .team {
-    background-color: var(--additional-accent-color);
+    background-color: var(--light-background-color);
 }
 .button {
+    color: var(--white-color);
+    background-color: var(--brand-color-blue);
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+.button:hover, button:focus {
+    background-color: #188CE8;
+}
+.header>.logo {
+    color: var(--brand-color-black);
+}
+.footer>.logo {
+    color: var(--white-color);
+}
+.logo>.color {
+    color: var(--brand-color-blue);
+}
+.header-link {
     color: var(--title-text-color);
-    background-color: var(--additional-accent-color);
+}
+.header-link-contacts {
+    color: inherit;
+}
+.footer {
+    background-color: var(--dark-background-color);
+}
+.map {
+    color: var(--white-color);
+}
+.mail, .phone {
+    color: var(--footer-contacts-color);
+}
+.link:focus, .link:hover, .link:active {
+    color: var(--brand-color-blue);
+}
+.active {
+    color: var(--brand-color-blue);
+}
+.item-button>.active {
+    color: var(--white-color);
+    background-color: var(--brand-color-blue);
+}
+.portfolio-button {
+    color: var(--title-text-color);
+    background-color: var(--light-background-color);
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
-.btn {
-    border: none;
-    border-radius: 4px;
+.portfolio-button:focus, .portfolio-button:hover, .portfolio-button:active {
+    color: var(--white-color);
+    background-color: var(--brand-color-blue);
 }
-.header, .footer .link:focus, .link:hover, .link:active {color: var(--brand-color);}
+.portfolio-link {
+    color: inherit;
+}
 
-.button:hover, .button:focus, .button:active {
-color: var(--primary-white-color);
-background-color: var(--brand-color);
-}
 
 /* Fonts */
+
 .logo {
-    font-family: 'Raleway';
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+font-family: var(--secondary-font);
+font-weight: 700;
+font-size: 26px;
+line-height: 1,19;
 }
-.header {
+.header-link, .header-link-contacts {
     font-size: 14px;
     font-weight: 500;
-    line-height: 1.21;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 }
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.4;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-.btn {
+.button {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.88;
     display: flex;
     align-items: center;
     text-align: center;
@@ -115,46 +140,40 @@ background-color: var(--brand-color);
 .benefits-title {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
+    line-height: 1.14;
     text-transform: uppercase;
 }
 .benefits-desc {
     font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+    line-height: 1.71;
 }
 .section-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 .team-title {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 .team-desc {
     font-size: 16px;
-    line-height: 1.2;
-     text-align: center;
-    letter-spacing: 0.03em;
+    line-height: 1.18;
+    text-align: center;
 }
-.contatcs-address {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+.map, .mail, .phone {
+    font-style: normal;
+    line-height: 1.71;
 }
-.item-btn {
+.portfolio-button {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1,63;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 .title-portfolio {
     font-weight: 700;
@@ -164,6 +183,21 @@ background-color: var(--brand-color);
 }
 .desc-portfolio {
     font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
+    line-height: 1.88;
+}
+
+/* Hide titles */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }

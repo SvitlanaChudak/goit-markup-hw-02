@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
@@ -15,7 +17,7 @@
       <nav class="header-nav">
         <ul class="list header-list">
           <li class="header-item"><a class="link header-link" href="./index.html">Студия</a></li>
-          <li class="header-item"><a class="link header-link" href="./portfolio.html">Портфолио</a></li>
+          <li class="header-item"><a class="link header-link active" href="./portfolio.html">Портфолио</a></li>
           <li class="header-item"><a class="link header-link" href="#">Контакты</a></li>
         </ul>
       </nav>
@@ -30,20 +32,20 @@
     </header>
 
     <!-- Main section -->
-    <main class="main">
-      <h1 hidden>Портфолио</h1>
-
+    <main>
+<section class="section-portfolio">
+   <h1 class="visually-hidden">Портфолио</h1>
       <!-- Фильтры -->
       <ul class="list list-btn">
-        <li class="item-btn"><button class="button" type="button">Все</button></li>
-        <li class="item-btn"><button class="button" type="button">Веб-сайты</button></li>
-        <li class="item-btn"><button class="button" type="button">Приложения</button></li>
-        <li class="item-btn"><button class="button" type="button">Дизайн</button></li>
-        <li class="item-btn"><button class="button" type="button">Маркетинг</button></li>
+        <li class="item-button"><button class="portfolio-button active" type="button">Все</button></li>
+        <li class="item-button"><button class="portfolio-button" type="button">Веб-сайты</button></li>
+        <li class="item-button"><button class="portfolio-button" type="button">Приложения</button></li>
+        <li class="item-button"><button class="portfolio-button" type="button">Дизайн</button></li>
+        <li class="item-button"><button class="portfolio-button" type="button">Маркетинг</button></li>
       </ul>
       <!-- Портфолио -->
       <ul class="list list-portfolio">
-        <li class="item-portfolio">
+        <li class="item-portfolio"><a class="portfolio-link" href="#">
           <img
             class="img-portfolio"
             src="./images/img_1.jpg"
@@ -53,8 +55,9 @@
           />
           <h2 class="title-portfolio">Технокряк</h2>
           <p class="desc-portfolio">Веб-сайт</p>
+          </a>
         </li>
-        <li class="item-portfolio">
+        <li class="item-portfolio"><a class="portfolio-link" href="#">
           <img
             class="img-portfolio"
             src="./images/img_2.jpg"
@@ -64,8 +67,9 @@
           />
           <h2 class="title-portfolio" lang="en">Постер New Orlean vs Golden Star</h2>
           <p class="desc-portfolio">Дизайн</p>
+          </a>
         </li>
-        <li class="item-portfolio">
+        <li class="item-portfolio"><a class="portfolio-link" href="#">
           <img
             class="img-portfolio"
             src="./images/img_3.jpg"
@@ -75,8 +79,9 @@
           />
           <h2 class="title-portfolio" lang="en">Ресторан Seafood</h2>
           <p class="desc-portfolio">Приложение</p>
+           </a>
         </li>
-        <li class="item-portfolio">
+        <li class="item-portfolio"><a class="portfolio-link" href="#">
           <img
             class="img-portfolio"
             src="./images/img_4.jpg"
@@ -86,8 +91,9 @@
           />
           <h2 class="title-portfolio" lang="en">Проект Prime</h2>
           <p class="desc-portfolio">Маркетинг</p>
+          </a>
         </li>
-        <li class="item-portfolio">
+        <li class="item-portfolio"><a class="portfolio-link" href="#">
           <img
             class="img-portfolio"
             src="./images/img_5.jpg"
@@ -97,8 +103,9 @@
           />
           <h2 class="title-portfolio" lang="en">Проект Boxes</h2>
           <p class="desc-portfolio">Приложение</p>
+        </a>
         </li>
-        <li class="item-portfolio">
+        <li class="item-portfolio"><a class="portfolio-link" href="#">
           <img
             class="img-portfolio"
             src="./images/img_6.jpg"
@@ -108,8 +115,9 @@
           />
           <h2 class="title-portfolio" lang="en">Inspiration has no Borders</h2>
           <p class="desc-portfolio">Веб-сайт</p>
+        </a>
         </li>
-        <li class="item-portfolio">
+        <li class="item-portfolio"><a class="portfolio-link" href="#">
           <img
             class="img-portfolio"
             src="./images/img_7.jpg"
@@ -119,8 +127,9 @@
           />
           <h2 class="title-portfolio" lang="en">Издание Limited Edition</h2>
           <p class="desc-portfolio">Дизайн</p>
+        </a>
         </li>
-        <li class="item-portfolio">
+        <li class="item-portfolio"><a class="portfolio-link" href="#">
           <img
             class="img-portfolio"
             src="./images/img_8.jpg"
@@ -130,8 +139,9 @@
           />
           <h2 class="title-portfolio" lang="en">Проект LAB</h2>
           <p class="desc-portfolio">Маркетинг</p>
+          </a>
         </li>
-        <li class="item-portfolio">
+        <li class="item-portfolio"><a class="portfolio-link" href="#">
           <img
             class="img-portfolio"
             src="./images/img_9.jpg"
@@ -141,8 +151,10 @@
           />
           <h2 class="title-portfolio" lang="en">Growing Business</h2>
           <p class="desc-portfolio">Приложение</p>
+          </a>
         </li>
       </ul>
+      </section>
     </main>
 
     <!-- Footer section -->
@@ -160,10 +172,10 @@
             >
           </li>
           <li class="contacts-item">
-            <a class="link contacts-link" href="mailto:info@example.com">info@example.com</a>
+            <a class="link contacts-link mail" href="mailto:info@example.com">info@example.com</a>
           </li>
           <li class="contacts-item">
-            <a class="link contacts-link" href="tel:+380991111111">+38 099 111 11 11</a>
+            <a class="link contacts-link phone" href="tel:+380991111111">+38 099 111 11 11</a>
           </li>
         </ul>
       </address>
