@@ -8,6 +8,7 @@
     --dark-background-color: #2F303A;
     --light-background-color: #F5F4FA;
     --frame-color: #ECECEC;
+    --button-hover-focus-color: #188CE8;
     --main-font: Roboto, sans-serif;
     --secondary-font: Raleway, sans-serif;
 }
@@ -53,7 +54,7 @@ body {
     border-radius: 4px;
 }
 .button:hover, button:focus {
-    background-color: #188CE8;
+    background-color: var(--button-hover-focus-color);
 }
 .header>.logo {
     color: var(--brand-color-black);
@@ -111,7 +112,7 @@ body {
 font-family: var(--secondary-font);
 font-weight: 700;
 font-size: 26px;
-line-height: 1,19;
+line-height: 1.19;
 }
 .header-link, .header-link-contacts {
     font-size: 14px;
@@ -172,7 +173,7 @@ line-height: 1,19;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,63;
+    line-height: 1.63;
     text-align: center;
 }
 .title-portfolio {
